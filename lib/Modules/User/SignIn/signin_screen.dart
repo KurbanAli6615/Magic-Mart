@@ -56,11 +56,13 @@ class SignInScreen extends StatelessWidget {
                         ),
                         Expanded(
                           child: TextField(
+                            maxLength: 10,
                             keyboardType: TextInputType.phone,
                             style: TextStyle(fontSize: 18),
                             decoration: InputDecoration(
                               hintText: "Phone number",
                               border: InputBorder.none,
+                              counterText: "",
                             ),
                           ),
                         ),

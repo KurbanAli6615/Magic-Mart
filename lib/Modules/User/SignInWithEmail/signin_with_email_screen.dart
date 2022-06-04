@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:magic_mart/App_Widgets/button.dart';
+import 'package:magic_mart/Modules/Home/home_tabbar_screen.dart';
 import 'package:magic_mart/Utils/colors.dart';
 import 'package:magic_mart/Utils/constants.dart';
 import 'package:magic_mart/Utils/images.dart';
 
+import '../../Home/home_screen.dart';
 import 'signup_with_email_screen.dart';
 
 class SignInWithEmailScreen extends StatelessWidget {
@@ -99,7 +101,11 @@ class SignInWithEmailScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                AppButton(text: "Log In", onTap: () {}),
+                AppButton(
+                    text: "Log In",
+                    onTap: () {
+                      Get.to(() => HomeTabbarScreen());
+                    }),
                 SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

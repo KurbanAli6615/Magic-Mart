@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:magic_mart/Utils/colors.dart';
 import 'package:magic_mart/Utils/constants.dart';
@@ -72,11 +73,13 @@ class MobileNumberScreen extends StatelessWidget {
                   ),
                   Expanded(
                     child: TextField(
+                      maxLength: 10,
                       keyboardType: TextInputType.phone,
                       style: TextStyle(fontSize: 18),
                       decoration: InputDecoration(
                         hintText: "Phone number",
                         border: InputBorder.none,
+                        counterText: "",
                       ),
                     ),
                   ),

@@ -23,3 +23,7 @@ const IMG_LOCATION_LOGO = _IMAGES + "locationLogo.png";
 
 // SignInWithEmail
 const IMG_CARROT_COLORED = _IMAGES + "carrot_colored.png";
+
+// HomeScreen
+const IMG_SLIDER = _IMAGES + "slider_image.png";
+const IMG_BANANA = _IMAGES + "banana.png";

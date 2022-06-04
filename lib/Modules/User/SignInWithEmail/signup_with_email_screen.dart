@@ -109,7 +109,11 @@ class SignUpWithEmailScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 30),
-                AppButton(text: "Sing Up", onTap: () {}),
+                AppButton(
+                    text: "Sing Up",
+                    onTap: () {
+                      Get.back();
+                    }),
                 SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
