@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:magic_mart/Utils/colors.dart';
 import 'package:magic_mart/Utils/constants.dart';
 
 import '../../Utils/images.dart';
+import '../ProductDetails/product_details_screen.dart';
 import 'item_view.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -97,7 +99,7 @@ class HomeScreen extends StatelessWidget {
                 GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    mainAxisExtent: 280,
+                    mainAxisExtent: 245,
                     crossAxisSpacing: 10,
                     mainAxisSpacing: 10,
                   ),
@@ -106,8 +108,15 @@ class HomeScreen extends StatelessWidget {
                   shrinkWrap: true,
                   itemBuilder: (BuildContext context, index) {
                     return ItemView(
+                      onItemTap: () {
+                        Get.to(() => ProductDetailsScreen());
+                      },
                       onAddTap: () {
-                        print("$index");
+                        Get.snackbar(
+                          "Added",
+                          "Added Item $index",
+                          snackPosition: SnackPosition.BOTTOM,
+                        );
                       },
                     );
                   },

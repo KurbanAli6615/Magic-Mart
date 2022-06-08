@@ -27,3 +27,6 @@ const IMG_CARROT_COLORED = _IMAGES + "carrot_colored.png";
 // HomeScreen
 const IMG_SLIDER = _IMAGES + "slider_image.png";
 const IMG_BANANA = _IMAGES + "banana.png";
+
+// ProductDetailsScreen
+const IMG_APPLE = _IMAGES + "apple_item.png";
