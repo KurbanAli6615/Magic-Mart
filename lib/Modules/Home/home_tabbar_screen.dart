@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:magic_mart/Modules/Cart/cart_screen.dart';
 import 'package:magic_mart/Modules/Favourite/favourite_screen.dart';
-import 'package:magic_mart/Modules/Home/explore_screen.dart';
+import 'package:magic_mart/Modules/Explore/explore_screen.dart';
 import 'package:magic_mart/Modules/Home/home_screen.dart';
 import 'package:magic_mart/Modules/Profile/profile_screen.dart';
 import 'package:magic_mart/Utils/colors.dart';

@@ -30,3 +30,8 @@ const IMG_BANANA = _IMAGES + "banana.png";
 
 // ProductDetailsScreen
 const IMG_APPLE = _IMAGES + "apple_item.png";
+
+// ExploreScreen
+const IMG_FRUIT_BASKET = _IMAGES + "fruit_basket.png";
+
+// CategoryDetailScreen
