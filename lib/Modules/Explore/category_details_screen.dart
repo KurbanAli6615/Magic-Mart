@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../Utils/constants.dart';
+import '../Filter/filter_screen.dart';
 import '../Home/item_view.dart';
 
 class CategoryDetailScreen extends StatelessWidget {
@@ -41,7 +42,9 @@ class CategoryDetailScreen extends StatelessWidget {
                     ),
                     Spacer(),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Get.to(() => FilterScreen());
+                      },
                       child: Icon(
                         Icons.filter_alt_rounded,
                         size: 30,

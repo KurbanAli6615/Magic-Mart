@@ -34,4 +34,8 @@ const IMG_APPLE = _IMAGES + "apple_item.png";
 // ExploreScreen
 const IMG_FRUIT_BASKET = _IMAGES + "fruit_basket.png";
 
-// CategoryDetailScreen
+// FilterScreen
+const IMG_CANCEL = _IMAGES + "cancel.png";
+
+// CartItemView
+const IMG_TOMATO = _IMAGES + "tomato.png";
