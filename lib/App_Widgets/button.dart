@@ -3,16 +3,18 @@ import 'package:magic_mart/Utils/colors.dart';
 import 'package:magic_mart/Utils/constants.dart';
 
 class AppButton extends StatelessWidget {
-  AppButton(
-      {Key? key,
-      required this.text,
-      required this.onTap,
-      this.color = COLOR_THEME})
-      : super(key: key);
+  AppButton({
+    Key? key,
+    required this.text,
+    required this.onTap,
+    this.color = COLOR_THEME,
+    this.fontColor = Colors.white,
+  }) : super(key: key);
 
   VoidCallback onTap;
   String text;
   Color color;
+  Color fontColor;
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +30,9 @@ class AppButton extends StatelessWidget {
           child: Center(
             child: Text(
               text,
-              style: const TextStyle(
+              style: TextStyle(
                   fontSize: 17,
-                  color: Colors.white,
+                  color: fontColor,
                   fontFamily: FONT_ABHAYALIBRE,
                   fontWeight: FontWeight.w300),
             ),

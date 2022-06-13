@@ -17,16 +17,20 @@ class CartItemView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(width: 10),
-            Image.asset(
-              IMG_TOMATO,
-              height: 80,
-              width: 80,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 5),
+              child: Image.asset(
+                IMG_TOMATO,
+                height: 80,
+                width: 80,
+              ),
             ),
             SizedBox(
               width: 20,
             ),
             Expanded(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
@@ -92,7 +96,7 @@ class CartItemView extends StatelessWidget {
                           "\$4.99",
                           style: TextStyle(
                             fontFamily: FONT_ABHAYALIBRE,
-                            fontSize: 20,
+                            fontSize: 24,
                             fontWeight: FontWeight.w600,
                           ),
                         ),

@@ -39,3 +39,9 @@ const IMG_CANCEL = _IMAGES + "cancel.png";
 
 // CartItemView
 const IMG_TOMATO = _IMAGES + "tomato.png";
+
+// PlaceOrderScreen
+const IMG_CARD = _IMAGES + "card.png";
+
+// OrderAcceptScreen
+const IMG_ORDER_ACCEPT = _IMAGES + "order_acc.png";

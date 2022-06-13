@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:magic_mart/App_Widgets/button.dart';
 import 'package:magic_mart/Utils/constants.dart';
 
 import 'cart_item_view.dart';
+import 'place_order_screen.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({Key? key}) : super(key: key);
@@ -35,7 +37,14 @@ class CartScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10),
-              AppButton(text: "Go to Checkout", onTap: () {})
+              AppButton(
+                text: "Go to Checkout",
+                onTap: () {
+                  Get.bottomSheet(
+                    PlaceOrderScreen(),
+                  );
+                },
+              )
             ],
           ),
         ),
