@@ -45,3 +45,7 @@ const IMG_CARD = _IMAGES + "card.png";
 
 // OrderAcceptScreen
 const IMG_ORDER_ACCEPT = _IMAGES + "order_acc.png";
+const IMG_FRUIT_BAG = _IMAGES + "fruit_bag.png";
+
+// FavouriteScreen
+const IMG_SPRITE = _IMAGES + "sprite.png";

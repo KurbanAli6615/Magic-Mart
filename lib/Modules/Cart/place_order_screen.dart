@@ -34,11 +34,16 @@ class PlaceOrderScreen extends StatelessWidget {
                 ),
               ),
               Spacer(),
-              Image.asset(
-                IMG_CANCEL,
-                height: 17,
-                width: 17,
-                color: Colors.grey,
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pop();
+                },
+                child: Image.asset(
+                  IMG_CANCEL,
+                  height: 17,
+                  width: 17,
+                  color: Colors.grey,
+                ),
               )
             ],
           ),
