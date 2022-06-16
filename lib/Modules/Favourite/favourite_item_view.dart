@@ -19,8 +19,8 @@ class FavouriteItemView extends StatelessWidget {
             BoxShadow(
               color: Colors.grey,
               offset: Offset(0, 0),
-              spreadRadius: 2,
-              blurRadius: 10,
+              spreadRadius: 1,
+              blurRadius: 5,
             ),
           ],
         ),
